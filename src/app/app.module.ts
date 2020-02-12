@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResaltarDirective } from './directives/resaltar.directive';
 import { ContarClicksDirective } from './directives/contar-clicks.directive';
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 const appRoutes: Routes = [
-  {path:'', component: AppComponent}
+  {path:'', component: AppComponent},
   {path:'lugares', component: AppComponent}
 ]
 
@@ -22,8 +24,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
+  ],  
+
   providers: [],
   bootstrap: [AppComponent]
 })
