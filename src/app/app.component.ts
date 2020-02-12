@@ -12,6 +12,40 @@ export class AppComponent {
   c = 3;
   listo = false;
 
+  lugares:any = [
+    {nombre: 'Floreria la Gardenia',
+     active:true,
+     cercania: 1,
+     plan: "pagado",
+     distancia: 1
+  },
+    {nombre: 'Donas la pasadita',
+    active:true,
+    cercania: 1,
+    plan: "gratuito",
+    distancia: 1.8
+  },
+    {nombre: 'Veterinaria Huellitas Felices',
+    active:false,
+    cercania: 2,
+    plan: "pagado",
+    distancia: 5
+  },
+  {nombre: 'Zapateria el Clavo',
+  active:false,
+  cercania: 3,
+  plan: "gratuito",
+  distancia: 10
+},
+  {nombre: 'Sushi Sushiroll',
+active:true,
+cercania:3,
+plan: "pagado",
+distancia: 35
+},
+
+  ];
+
   constructor() {
     setTimeout(() => {
       this.listo = true;
