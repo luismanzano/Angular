@@ -8,9 +8,14 @@ import { ContarClicksDirective } from './directives/contar-clicks.directive';
 import { Routes, RouterModule } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DetalleComponent } from 'src/detalle/detalle.component';
+import { LugaresComponent } from 'src/lugares/lugares.component';
+
 const appRoutes: Routes = [
-  {path:'', component: AppComponent},
-  {path:'lugares', component: AppComponent}
+  {path:'', component: LugaresComponent},
+  {path:'lugares', component: LugaresComponent},
+  {path: 'detalle', component: DetalleComponent}
+
 ]
 
 
@@ -20,7 +25,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ResaltarDirective,
-    ContarClicksDirective
+    ContarClicksDirective,
+    DetalleComponent,
+    LugaresComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<h1>Lugares</h1>
+
+
+<h2>{{b+c}}</h2>
+<hr/>
+
+<button [disabled]="!listo" (click)="hacerAlgo()"> Click me! </button>
+
+<div class="container">
+  <div class="col-md-8">
+  <ul class="list-group ">
+      <ng-container *ngFor="let lugar of lugares">
+
+        <li class="list-group-item" *ngIf="lugar.active">{{lugar.nombre}}</li>
+
+    </ng-container>
+  </ul>
+</div>
+</div>
