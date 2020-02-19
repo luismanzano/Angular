@@ -10,9 +10,9 @@
   <div class="col-md-8">
   <ul class="list-group ">
       <ng-container *ngFor="let lugar of lugares">
-
+<a routerLink='/detalle/{{lugar.id}}' [queryParams]="{action2:'edit', referer:'google'}">
         <li class="list-group-item" *ngIf="lugar.active">{{lugar.nombre}}</li>
-
+      </a>
     </ng-container>
   </ul>
 </div>
