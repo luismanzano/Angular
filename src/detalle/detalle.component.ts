@@ -32,7 +32,7 @@ export class DetalleComponent {
     cercania: 2,
     plan: "pagado",
     distancia: 5,
-    descripcion: "Mas adelante le proveeremos una descripcion completa"
+    descripcion: 'Mas adelante le proveeremos una descripcion completa'
   },
   {
     id:4,
@@ -56,7 +56,7 @@ descripcion: "Mas adelante le proveeremos una descripcion completa"
   ];
 
   id = null;
-  lugar:any ={};
+  lugar: any = {};
 
 
 

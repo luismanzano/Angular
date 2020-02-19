@@ -10,11 +10,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetalleComponent } from 'src/detalle/detalle.component';
 import { LugaresComponent } from 'src/lugares/lugares.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const appRoutes: Routes = [
   {path:'', component: LugaresComponent},
-  {path:'lugares', component: LugaresComponent},
-  {path: 'detalle/:id', component: DetalleComponent}
+  {path: 'lugares', component: LugaresComponent},
+  {path: 'detalle/:id', component: DetalleComponent},
+  {path: 'contacto', component: ContactoComponent}
 
 ]
 
@@ -27,14 +29,15 @@ const appRoutes: Routes = [
     ResaltarDirective,
     ContarClicksDirective,
     DetalleComponent,
-    LugaresComponent
+    LugaresComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
-  ],  
+  ],
 
   providers: [],
   bootstrap: [AppComponent]
